@@ -18,6 +18,12 @@ shinyUI(pageWithSidebar(
                 actionButton(inputId ='submitButton', label = 'Submit')
         ),
         mainPanel(
+                h6('This application predicts the price of a house located in the U.S.', align = 'left'),
+                h6('Just fill in he number of living square feet of the house, the number of bedrooms and bathrooms.', align = 'left'),
+                h6('Note, it is about 11 sqft on a square meter. Also note that in the U.S. a bathroom could be a half, 3/4 or a full bathroom', align = 'left'),
+                h6('Note, also that this is a simple model for prediction of the price of a house.', align = 'left'),
+                h6('A more advanced model would take other factors such as location,', align = 'left'),
+                h6('i.e. zipcode and distance to the water, into account.', align = 'left'),
                 textOutput('house'),
                 textOutput('prediction')
         )
